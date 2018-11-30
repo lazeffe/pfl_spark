@@ -17,12 +17,12 @@ public class BookmarkController {
   private Bookmark bookmark;
   private BookmarkDao bookmarkDao;
 
-  /*@Autowired
+  @Autowired
   public BookmarkController(Bookmark bookmark, BookmarkDao bookmarkDao) {
     this.bookmark = bookmark;
     this.bookmarkDao = bookmarkDao;
-  }*/
-
+  }
+  
   @RequestMapping("/addBmk.bo")
   protected void addBmk(HttpServletRequest request, HttpServletResponse response) throws Exception {
     HttpSession session = request.getSession();
